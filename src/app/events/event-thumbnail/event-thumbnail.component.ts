@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-event-thumbnail',
@@ -8,4 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class EventThumbnailComponent  {
   @Input() event: any;
 
+  logFoo(){
+    console.log('foo');
+  }
 }
