@@ -45,3 +45,6 @@ button {
 .toast-warning {
   background-color: #f89406;
 }
+.well {
+  color: #ddd;
+}

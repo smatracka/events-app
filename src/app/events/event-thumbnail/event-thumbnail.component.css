@@ -1,0 +1,9 @@
+.thumbnail {
+  padding: 5%;
+  margin: 5%;
+  background: antiquewhite;
+  min-height: 210px;
+}
+.green {
+  color: #51a351 !important;
+}
