@@ -24,10 +24,27 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              {
+                "input": "./node_modules/toastr/build/toastr.min.css"
+
+              },
+              {
+                "input": "./node_modules/ngf-bootstrap/dist/bootstrap.min.css"
+              },
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "node_modules/jquery/dist/jquery.min.js"
+              },
+              {
+                "input": "node_modules/toastr/build/toastr.min.js"
+              },
+              {
+                "input": "node_modules/bootstrap/dist/js/bootstrap.min 2.js"
+              }
+
+            ]
           },
           "configurations": {
             "production": {
