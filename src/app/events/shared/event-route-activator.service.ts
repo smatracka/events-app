@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from '@angular/router';
-import {EventService} from '../shared/event.service';
+import {EventService} from './event.service';
 import {Observable} from 'rxjs';
 
 @Injectable()

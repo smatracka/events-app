@@ -13,7 +13,9 @@ import {EventService} from './events/shared/event.service';
 import {ToastrService} from './common/toastr.service';
 import { CreateEventComponent } from './events/create-event/create-event.component';
 import { Error404Component } from './errors/error404/error404.component';
-import {EventRouteActivatorService} from './events/event-details/event-route-activator.service';
+import {EventRouteActivatorService} from './events/shared/event-route-activator.service';
+import {EventsListResolverService} from './events/events-list-resolver.service';
+import { ProfileComponent } from './user/profile/profile.component';
 
 
 
@@ -25,7 +27,8 @@ import {EventRouteActivatorService} from './events/event-details/event-route-act
     NavComponent,
     EventDetailsComponent,
     CreateEventComponent,
-    Error404Component
+    Error404Component,
+    ProfileComponent
   ],
     imports: [
         BrowserModule,
@@ -39,7 +42,8 @@ import {EventRouteActivatorService} from './events/event-details/event-route-act
     {
       provide: 'canDeactivateCreatedEvent',
       useValue: checkDirtyState,
-    }
+    },
+    EventsListResolverService
   ],
   bootstrap: [AppComponent]
 })
