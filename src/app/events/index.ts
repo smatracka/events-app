@@ -1,0 +1,6 @@
+export * from './create-event/create-event.component'
+export * from './event-details/event-details.component'
+export * from './events-list/events-list.component'
+export * from './events-list-resolver.service'
+export * from './shared/index'
+export * from '../errors/error404/error404.component'
