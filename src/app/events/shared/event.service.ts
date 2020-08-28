@@ -1,26 +1,25 @@
 import {Injectable} from '@angular/core';
 import {Subject} from 'rxjs';
+import {IEvent} from './event.model';
 
 @Injectable()
 export class EventService {
-  // tslint:disable-next-line:typedef
-  getEvents() {
-    let subject = new Subject();
+  getEvents(): Subject<IEvent[]> {
+    let subject = new Subject<IEvent[]>();
     setTimeout( () => {subject.next(EVENTS); subject.complete(); },
       100);
     return subject;
   }
-  // tslint:disable-next-line:typedef
-  getEvent(id: number){
+  getEvent(id: number): IEvent{
     return EVENTS.find(event => event.id === id);
   }
 }
 
-const EVENTS = [
+const EVENTS: IEvent[] = [
   {
     id: 1,
     name: 'Angular Connect',
-    date: '9/26/2036',
+    date: new Date('9/26/2036'),
     time: '10:00 am',
     price: 599.99,
     imageUrl: '/assets/images/angularconnect-shield.png',
